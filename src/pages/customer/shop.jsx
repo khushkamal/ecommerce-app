@@ -1,9 +1,7 @@
-import React from 'react'
+import Dashboard from '../admin/Dashboard'
 
-const shop = () => {
-  return (
-    <div>shop</div>
-  )
+const Shop = () => {
+  return <Dashboard />
 }
 
-export default shop
+export default Shop
