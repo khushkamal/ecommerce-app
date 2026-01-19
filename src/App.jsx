@@ -7,6 +7,8 @@ import Shop from './pages/customer/shop.jsx'
 import Products from './pages/Products.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 
+
+
 const App = () => {
   return (
     <Routes>

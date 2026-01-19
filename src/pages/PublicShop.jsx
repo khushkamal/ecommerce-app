@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import LoginModal from '../components/LoginModal'
+import WhatsappButton from '../components/WhatsappButton.jsx'
 
 const PublicShop = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false)
@@ -82,8 +83,9 @@ const PublicShop = () => {
                 </button>
 
                 {/* User Menu Dropdown */}
-                <div className='relative group'>
-                  <button className='flex items-center space-x-2 bg-linear-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:shadow-lg transition'>
+                <div className='relative group inline-block'>
+                  <button  className='flex items-center space-x-2 bg-linear-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:shadow-lg transition'>
+                    
                     <i className='fa-solid fa-user'></i>
                     <span className='hidden sm:inline text-sm'>Account</span>
                     <i className='fa-solid fa-chevron-down text-xs'></i>
@@ -268,6 +270,8 @@ const PublicShop = () => {
           </div>
         </div>
       </div>
+
+      <WhatsappButton />
 
       {/* Login Modal */}
       <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
