@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import LoginModal from '../components/LoginModal'
-import WhatsappButton from '../components/WhatsappButton.jsx'
+import WhatsappButton from '../components/WhatsappButton'
+import Footer from '../pages/customer/Footer.jsx'
+
+
 
 const PublicShop = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false)
@@ -121,6 +124,8 @@ const PublicShop = () => {
               </div>
             </div>
           </div>
+
+          
 
           {/* Mobile Search Bar */}
           <div className='md:hidden px-4 pb-4'>
@@ -275,7 +280,14 @@ const PublicShop = () => {
 
       {/* Login Modal */}
       <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
+
+     
+     <Footer />
+
+    
     </div>
+
+     
   )
 }
 

@@ -9,15 +9,20 @@ import ProtectedRoute from './components/ProtectedRoute.jsx'
 
 
 
+
+
+
 const App = () => {
   return (
+  
+   
     <Routes>
       <Route path="/" element={<PublicShop />} />
       <Route path="/login" element={<Login />} />
       <Route element={<ProtectedRoute />}>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/products" element={<Products />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/shop" element={<Shop />} />
+      <Route path="/products" element={<Products />} />
       </Route>
     </Routes>
   )
