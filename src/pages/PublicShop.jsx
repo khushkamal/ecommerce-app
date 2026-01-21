@@ -151,6 +151,7 @@ const PublicShop = () => {
             <p className='text-gray-500 mt-2'>Products coming soon...</p>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
